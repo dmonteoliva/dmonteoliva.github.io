@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Round&display=swap');
+
+body {
+    background: radial-gradient(#2E9AC1, #020C19);
+    color: #ddd;
+}
+
+header {
+    background-size: 50vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image: url('assets/backgrounds/2.png');
+    height: 100vh;
+}
+
+header>div {
+    height: 35vh;
+}
+
+input[type=number] {
+    margin: 0 10px;
+    width: 80px;
+}
+
+.brand {
+    transform: rotate(-20deg);
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 2.5vmax;
+}
+
+.faustao {
+    font-family: 'Nova Round';
+    font-size: 15vmin;
+    background: linear-gradient(to right, blue, aqua, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section {
+    padding: 3rem 0;
+    width: 50vw;
+}
+
+footer {
+    height: 15vh;
+    background-color: #111;
+}
+
+#resultado {
+    max-height: 300px;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    overflow-y: auto;
+}
+
+#resultado p:last-child {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    header {
+        background-size: 70vh;
+        background-position: left bottom;
+    }
+
+    header>div {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 992px) {
+    header>div {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1200px) {}
