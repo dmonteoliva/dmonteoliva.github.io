@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nova+Round&display=swap');
 
+:root {
+    --main-color: #ddd;
+  }
+
 body {
     background: radial-gradient(#2E9AC1, #020C19);
-    color: #ddd;
+    color: var(--main-color);
 }
 
 header {
@@ -39,14 +43,40 @@ input[type=number] {
     -webkit-text-fill-color: transparent;
 }
 
+.frase {
+    font-size: 2vmax;
+}
+
 section {
     padding: 3rem 0;
     width: 50vw;
 }
 
-footer {
-    height: 15vh;
+h1 {
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+footer > .row {
+    min-height: 15vh;
     background-color: #111;
+}
+
+footer > .row img {
+    margin-left: 10px;
+}
+
+footer > .row a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+footer > .row p {
+    margin: 0;
+}
+
+footer .fa-github {
+    font-size: 3rem;
 }
 
 #resultado {
