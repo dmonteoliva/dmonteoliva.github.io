@@ -40,19 +40,22 @@
     </header>
     <section class="container">
         <div class="row align-items-center">
-            <div class="col-sm-10 offset-sm-1">
+            <div class="col-sm-12 col-md-10 offset-md-1">
                 <div class="row">
                     <h1 class="text-center">E agora, mais do que nunca, vem aí, o melhor gerador de Lorem Ipsum, tanto no pessoal quanto no profissional, galera!</h1>
-                    <div class="col-sm-12 col-md-7 col-lg-8 col-xl-9 form-group">
-                        Manda <input type="number" class="form-control d-inline" id="quantidadeDeParagrafos" value="1"> parágrafos, bicho!
+                    <div class="col-sm-8 col-md-7 col-lg-8 col-xl-9 form-group">
+                        Manda <input type="number" class="form-control d-inline" id="paragraphsQuantity" value="1"> parágrafos, bicho!
                     </div>
-                    <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 text-right form-group">
-                        <input class="btn btn-dark form-control" type="button" id="se-vira-nos-30" value="SE VIRA NOS TRINTA!">
+                    <div class="col-sm-4 col-md-5 col-lg-4 col-xl-3 text-right form-group">
+                        <button class="btn btn-dark form-control" type="button" id="createText">Se vira nos trinta!</button>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 form-group">
-                        <div id="resultado" contenteditable="true"></div>
+                    <div class="col-12">
+                        <div id="result" contenteditable="true"></div>
+                    </div>
+                    <div class=" col-4 col-md-3 col-lg-2 ">
+                        <button class="btn btn-dark form-control" type="button" id="copyToClipboard"><i class="far fa-copy"></i> Copiar</button>
                     </div>
                 </div>
             </div>
@@ -66,14 +69,14 @@
                         Desenvolvido pela fera Davy Monteoliva
                     </a>
                 </p>
-                <a href="https://github.com/dmonteoliva" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/dmonteoliva" title="GitHub" class="github"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/2eb90a2bcc.js" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
 </body>
 
 </html>
